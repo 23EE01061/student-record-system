@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
+#include<ctype.h>
 //Used macro
 #define max_yr  9999
 #define min_yr  1990
@@ -160,7 +161,7 @@ void addstudentInDataBase()
         fflush(stdin);
         num=scanf("%u",&addstudentInfoInDataBase.student_id);
         if (num!= 1) {
-        printf("\n\t\t\t%sStudent ID contain invalid character. Please enter again.%s","\x1B[31m","\x1B[32m");
+        printf("\n\t\t\t%sStudent ID can't contain alphabets. Please enter again.%s","\x1B[31m","\x1B[32m");
         } 
     } while (num != 1);
     do
@@ -171,7 +172,7 @@ void addstudentInDataBase()
         status = ValidName(addstudentInfoInDataBase.fatherName);
         if (!status)
         {
-            printf("\n\t\t\t%sName contain invalid character. Please enter again.%s","\x1B[31m","\x1B[32m");
+            printf("\n\t\t\t%sNumeric values are not allowed. Please enter again.%s","\x1B[31m","\x1B[32m");
         }
     }
     while(!status);
@@ -183,7 +184,7 @@ void addstudentInDataBase()
         status = ValidName(addstudentInfoInDataBase.studentName);
         if (!status)
         {
-            printf("\n\t\t\t%sName contain invalid character. Please enter again.%s","\x1B[31m","\x1B[32m");
+            printf("\n\t\t\t%sNumeric values are not allowed. Please enter again.%s","\x1B[31m","\x1B[32m");
         }
     }
     while(!status);
@@ -209,7 +210,7 @@ void addstudentInDataBase()
         status = ValidName(addstudentInfoInDataBase.studentBranch);
         if (!status)
         {
-            printf("\n\t\t\t%sBranch Name contains invalid character. Please enter again.%s","\x1B[31m","\x1B[32m");
+            printf("\n\t\t\t%sBranch Name contains invalid Numeric character. Please enter again.%s","\x1B[31m","\x1B[32m");
         }
     }
     while(!status);
@@ -221,7 +222,7 @@ void addstudentInDataBase()
         status = ValidName(addstudentInfoInDataBase.studentGender);
         if (!status)
         {
-            printf("\n\t\t\t%sYour entry contains invalid character. Please enter again.%s","\x1B[31m","\x1B[32m");
+            printf("\n\t\t\t%sYour entry can't have Numeric values. Please enter again.%s","\x1B[31m","\x1B[32m");
         }
     }
     while(!status);
@@ -234,7 +235,7 @@ void addstudentInDataBase()
         fflush(stdin);
         num=scanf("%f",&addstudentInfoInDataBase.studentfees);
         if (num!= 1) {
-        printf("\n\t\t\t%sYour entry contains invalid character. Please enter again.%s","\x1B[31m","\x1B[32m");
+        printf("\n\t\t\t%sYou can only enter numbers. Please enter again.%s","\x1B[31m","\x1B[32m");
         } 
     } while (num != 1);
     do
