@@ -19,7 +19,9 @@ Make sure you have a C compiler installed on your machine. If not, you can downl
 
 ## Project Structure
 •	student_record_system.c: Main source code file containing the implementation of the Student Record System.
+
 •	StudentRecordSystem.bin: Binary file to store student records.
+
 •   tmp.bin: Temporary binary file used during the delete operation.
 
 # Usage
