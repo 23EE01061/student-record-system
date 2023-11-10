@@ -31,6 +31,9 @@ Make sure you have a C compiler installed on your machine. If not, you can downl
 
 # Notes
 •	The default login credentials are:
+
 •	Username: admin
+
 •	Password: iitbbs
-•   You can change the username and using update password feature in the program.
+
+•  You can change the username and using update password feature in the program.
